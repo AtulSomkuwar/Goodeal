@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in-page</title>
+    <script src="https://kit.fontawesome.com/aaaede2f8f.js" crossorigin="anonymous"></script>
+    <style>
+        /* Log-in-page */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      #background-image{
+        width: 100%;
+        background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(1.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+       
+        position:relative; 
+       
+       
+      }
+     
+      .content p{
+        width: 300px;
+        color: white;
+        font-size: 27px; 
+        /* text-align: center; */
+        margin: 50px;
+       
+      }
+
+       .form{
+    width: 250px;
+    height: 450px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+
+    top: 100px;
+    left: 500px;
+    border-radius: 10px;
+    padding: 30px;
+    position:absolute;
+    color: white;
+}
+.close{
+    width: 50px;
+    float: right;
+    margin-top: -29px;
+    margin-right: -30px;
+    background:rgb(226, 161, 76);
+    color: white;
+    border:rgb(226, 161, 76) ;
+    cursor: pointer;
+    
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 22px;
+    background-color:rgb(226, 161, 76) ;
+    border-radius: 10px;
+    margin: 2px;
+    color:white;
+    padding: 8px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid rgb(226, 161, 76) ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.form input :focus{
+ outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+.btnn{
+width: 240px;
+height: 40px;
+background:rgb(226, 161, 76) ;
+border: none;
+margin-top: 40px;
+font-size: 18px;
+border-radius: 10px;
+cursor: pointer;
+color: white;
+
+}
+.btnn:hover{
+    background: white;
+    color:rgb(226, 161, 76) ;
+}
+.btnn a{
+    text-decoration: none;
+    color: rgb(91, 91, 209);
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align:center;
+
+}
+.form .link a{
+    text-decoration: none;
+    color:rgb(226, 161, 76) ;
+  
+}
+.form .link a span{
+  color: white;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color:white;
+}
+.icon {
+  text-decoration: none ;
+  color: white;
+  display: flex;
+  justify-content: center;
+ 
+}
+.icon i{
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+    padding: top 5px; 
+}
+
+
+/* // Log in page */
+.login-page {
+    width: 250px;
+    height: 450px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+
+    top: 100px;
+    left: 1000px;
+    border-radius: 10px;
+    padding: 30px;
+    position:absolute;
+    color: white;
+}
+.close{
+    width: 50px;
+    float: right;
+    margin-top: -29px;
+    margin-right: -30px;
+    background:rgb(226, 161, 76);
+    color: white;
+    border:rgb(226, 161, 76) ;
+    cursor: pointer;
+    
+}
+.login-page  h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 22px;
+    background-color:rgb(226, 161, 76) ;
+    border-radius: 10px;
+    margin: 2px;
+    color:white;
+    padding: 8px;
+}
+.login-page  input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid rgb(226, 161, 76) ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.login-page input :focus{
+ outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+.btnn{
+width: 240px;
+height: 40px;
+background:rgb(226, 161, 76) ;
+border: none;
+margin-top: 40px;
+font-size: 18px;
+border-radius: 10px;
+cursor: pointer;
+color: white;
+
+}
+.btnn:hover{
+    background: white;
+    color:rgb(226, 161, 76) ;
+}
+.btnn a{
+    text-decoration: none;
+    color: rgb(91, 91, 209);
+    font-weight: bold;
+}
+.login-page  .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align:center;
+
+}
+.login-page  .link a{
+    text-decoration: none;
+    color:rgb(226, 161, 76) ;
+  
+}
+.login-page  .link a span{
+  color: white;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color:white;
+}
+.icon {
+  text-decoration: none ;
+  color: white;
+  display: flex;
+  justify-content: center;
+ 
+}
+.icon i{
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+    padding: top 5px; 
+}
+
+.last{
+margin-top: 620px;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+margin-left: 100px;
+font-family:'Arial Narrow Bold', sans-serif;
+ 
+}
+ .last .heading{
+  
+    color: chocolate;
+}
+ .last button{
+   
+    width: 150px;
+   padding: 10px;
+   color: white;
+   border: none;
+   background-color:rgb(195, 47, 76);
+   margin-left: 20px;
+   font-size: 20px;
+}
+
+@media (max-width:800px){
+
+    #background-image{
+        width: 100%;
+        background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(1.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        
+       
+      }
+     
+      .content p{
+       width: 750px;
+        color: white;
+        font-size: 22px; 
+       
+        margin: 20px;
+       
+      }
+
+    .form{
+    width: 200px;
+    height: 330px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+
+    top: 160px;
+    left: 130px;
+    border-radius: 10px;
+    padding: 30px;
+    
+    color: white;
+}
+.close{
+    width: 40px;
+    float: right;
+    margin-top: -29px;
+    margin-right: -30px;
+    background:rgb(226, 161, 76);
+    color: white;
+    border:rgb(226, 161, 76) ;
+    cursor: pointer;
+    
+}
+.form h2{
+    width: 180px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 18px;
+    background-color:rgb(226, 161, 76) ;
+    border-radius: 10px;
+    margin: 2px;
+    color:white;
+    padding: 8px;
+}
+.form input{
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border-bottom: 1px solid rgb(226, 161, 76) ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+.form input :focus{
+ outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+.btnn{
+width: 200px;
+height: 30px;
+background:rgb(226, 161, 76) ;
+border: none;
+margin-top: 20px;
+font-size: 15px;
+border-radius: 10px;
+cursor: pointer;
+color: white;
+
+}
+.btnn:hover{
+    background: white;
+    color:rgb(226, 161, 76) ;
+}
+.btnn a{
+    text-decoration: none;
+    color: rgb(91, 91, 209);
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align:center;
+
+}
+.form .link a{
+    text-decoration: none;
+    color:rgb(226, 161, 76) ;
+  
+}
+.form .link a span{
+  color: white;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color:white;
+    /* display: none; */
+   
+}
+.icon {
+  text-decoration: none ;
+  color: white;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 5px; */
+ 
+}
+.icon i{
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+    padding: top 5px; 
+}
+
+
+/* // Log in page */
+.login-page {
+    width: 200px;
+   height: 330px;
+
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+
+    top: 160px;
+    left: 450px;
+    border-radius: 10px;
+    /* padding: 30px; */
+    position:absolute;
+    color: white;
+}
+.close{
+    width: 40px;
+    float: right;
+    margin-top: -29px;
+    margin-right: -30px;
+    background:rgb(226, 161, 76);
+    color: white;
+    border:rgb(226, 161, 76) ;
+    cursor: pointer;
+    
+}
+.login-page  h2{
+    width: 180px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 18px;
+    background-color:rgb(226, 161, 76) ;
+    border-radius: 10px;
+    margin: 2px;
+    color:white;
+    padding: 8px;
+}
+.login-page  input{
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border-bottom: 1px solid rgb(226, 161, 76) ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+.login-page input :focus{
+ outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+.btnn{
+width: 200px;
+height: 30px;
+background:rgb(226, 161, 76) ;
+border: none;
+margin-top: 20px;
+font-size: 18px;
+border-radius: 10px;
+cursor: pointer;
+color: white;
+
+}
+.btnn:hover{
+    background: white;
+    color:rgb(226, 161, 76) ;
+}
+.btnn a{
+    text-decoration: none;
+    color: rgb(91, 91, 209);
+    font-weight: bold;
+}
+.login-page  .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align:center;
+
+}
+.login-page  .link a{
+    text-decoration: none;
+    color:rgb(226, 161, 76) ;
+  
+}
+.login-page  .link a span{
+  color: white;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color:white;
+}
+.icon {
+  text-decoration: none ;
+  color: white;
+  display: flex;
+  justify-content: center;
+ 
+}
+.icon i{
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+    padding: top 5px; 
+}
+
+.last{
+margin-top: 540px;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+margin-left: -600px;
+ 
+}
+ .last .heading{
+  font-size: 25px;
+    color: chocolate;
+}
+ .last button{
+   
+    width: 100px;
+   padding: 10px;
+   color: white;
+   border: none;
+   background-color:rgb(195, 47, 76);
+   margin-left: 20px;
+   font-size: 17px;
+}
+}
+@media (max-width:600px){
+    #background-image{
+        width: 100%;
+        background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(1.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        
+       
+      }
+     
+      .content p{
+       width: 550px;
+        color: white;
+        font-size: 18px; 
+       
+        margin: 20px;
+       
+      }
+
+    .form{
+    width: 200px;
+    height: 330px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+
+    top: 160px;
+    left: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    
+    color: white;
+}
+.close{
+    width: 40px;
+    float: right;
+    margin-top: -29px;
+    margin-right: -30px;
+    background:rgb(226, 161, 76);
+    color: white;
+    border:rgb(226, 161, 76) ;
+    cursor: pointer;
+    
+}
+.form h2{
+    width: 180px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 18px;
+    background-color:rgb(226, 161, 76) ;
+    border-radius: 10px;
+    margin: 2px;
+    color:white;
+    padding: 8px;
+}
+.form input{
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border-bottom: 1px solid rgb(226, 161, 76) ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+.form input :focus{
+ outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+.btnn{
+width: 200px;
+height: 30px;
+background:rgb(226, 161, 76) ;
+border: none;
+margin-top: 20px;
+font-size: 15px;
+border-radius: 10px;
+cursor: pointer;
+color: white;
+
+}
+.btnn:hover{
+    background: white;
+    color:rgb(226, 161, 76) ;
+}
+.btnn a{
+    text-decoration: none;
+    color: rgb(91, 91, 209);
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align:center;
+
+}
+.form .link a{
+    text-decoration: none;
+    color:rgb(226, 161, 76) ;
+  
+}
+.form .link a span{
+  color: white;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color:white;
+    /* display: none; */
+   
+}
+.icon {
+  text-decoration: none ;
+  color: white;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 5px; */
+ 
+}
+.icon i{
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+    padding: top 5px; 
+}
+
+
+/* // Log in page */
+.login-page {
+    width: 200px;
+   height: 330px;
+
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+
+    top: 160px;
+    left: 300px;
+    border-radius: 10px;
+    /* padding: 30px; */
+    position:absolute;
+    color: white;
+}
+.close{
+    width: 40px;
+    float: right;
+    margin-top: -29px;
+    margin-right: -30px;
+    background:rgb(226, 161, 76);
+    color: white;
+    border:rgb(226, 161, 76) ;
+    cursor: pointer;
+    
+}
+.login-page  h2{
+    width: 180px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 18px;
+    background-color:rgb(226, 161, 76) ;
+    border-radius: 10px;
+    margin: 2px;
+    color:white;
+    padding: 8px;
+}
+.login-page  input{
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border-bottom: 1px solid rgb(226, 161, 76) ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+.login-page input :focus{
+ outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+.btnn{
+width: 200px;
+height: 30px;
+background:rgb(226, 161, 76) ;
+border: none;
+margin-top: 20px;
+font-size: 18px;
+border-radius: 10px;
+cursor: pointer;
+color: white;
+
+}
+.btnn:hover{
+    background: white;
+    color:rgb(226, 161, 76) ;
+}
+.btnn a{
+    text-decoration: none;
+    color: rgb(91, 91, 209);
+    font-weight: bold;
+}
+.login-page  .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align:center;
+
+}
+.login-page  .link a{
+    text-decoration: none;
+    color:rgb(226, 161, 76) ;
+  
+}
+.login-page  .link a span{
+  color: white;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color:white;
+}
+.icon {
+  text-decoration: none ;
+  color: white;
+  display: flex;
+  justify-content: center;
+ 
+}
+.icon i{
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+    padding: top 5px; 
+}
+
+.last{
+margin-top: 540px;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+margin-left: -470px;
+ 
+}
+ .last .heading{
+  font-size: 25px;
+    color: chocolate;
+}
+ .last button{
+   
+    width: 100px;
+   padding: 10px;
+   color: white;
+   border: none;
+   background-color:rgb(195, 47, 76);
+   margin-left: 20px;
+   font-size: 17px;
+}
+}
+
+@media (max-width:400px){
+    #background-image{
+        width: 100%;
+        background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(1.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        
+       
+      }
+     
+      .content p{
+       width: 350px;
+        color: white;
+        font-size: 14px; 
+       
+        margin: 20px;
+       
+      }
+
+    .form{
+    width: 110px;
+    height: 270px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+
+    top: 160px;
+    left: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    
+    color: white;
+}
+.close{
+    width: 20px;
+    float: right;
+    margin-top: -29px;
+    margin-right: -30px;
+    background:rgb(226, 161, 76);
+    color: white;
+    border:rgb(226, 161, 76) ;
+    cursor: pointer;
+    
+}
+.form h2{
+    width: 110px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 12px;
+    background-color:rgb(226, 161, 76) ;
+    border-radius: 10px;
+    margin: 2px;
+    color:white;
+    padding: 8px;
+}
+.form input{
+    width: 130px;
+    height: 30px;
+    background: transparent;
+    border-bottom: 1px solid rgb(226, 161, 76) ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-top: 7px;
+    font-family: sans-serif;
+}
+.form input :focus{
+ outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+.btnn{
+width: 90px;
+height: 30px;
+background:rgb(226, 161, 76) ;
+border: none;
+margin-top: 20px;
+font-size: 12px;
+border-radius: 10px;
+cursor: pointer;
+color: white;
+
+}
+.btnn:hover{
+    background: white;
+    color:rgb(226, 161, 76) ;
+}
+
+.btnn a{
+    text-decoration: none;
+    color: rgb(91, 91, 209);
+    font-weight: bold;
+   
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-top: 20px;
+    text-align:center;
+
+}
+.form .link a{
+    text-decoration: none;
+    color:rgb(226, 161, 76) ;
+  
+}
+.form .link a span{
+  color: white;
+ 
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color:white;
+    display: none;
+   
+}
+.icon {
+  text-decoration: none ;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+ 
+}
+.icon i{
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+    padding: top 5px; 
+}
+
+
+/* // Log in page */
+.login-page {
+    width:110px;
+   height: 270px;
+
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+
+    top: 160px;
+    left: 200px;
+    border-radius: 10px;
+    /* padding: 30px; */
+    position:absolute;
+    color: white;
+}
+.close{
+    width: 40px;
+    float: right;
+    margin-top: -29px;
+    margin-right: -30px;
+    background:rgb(226, 161, 76);
+    color: white;
+    border:rgb(226, 161, 76) ;
+    cursor: pointer;
+    font-size: 12px;
+    
+}
+.login-page  h2{
+    width: 110px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 12px;
+    background-color:rgb(226, 161, 76) ;
+    border-radius: 10px;
+    margin: 2px;
+    
+    color:white;
+    padding: 8px;
+}
+.login-page  input{
+    width: 130px;
+    height: 30px;
+    background: transparent;
+    border-bottom: 1px solid rgb(226, 161, 76) ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-top: 7px;
+    font-family: sans-serif;
+}
+.login-page input :focus{
+ outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+.btnn{
+width: 130px;
+height: 30px;
+background:rgb(226, 161, 76) ;
+border: none;
+margin-top: 20px;
+font-size: 12px;
+border-radius: 10px;
+cursor: pointer;
+color: white;
+
+}
+.btnn:hover{
+    background: white;
+    color:rgb(226, 161, 76) ;
+}
+.btnn a{
+    text-decoration: none;
+    color: rgb(91, 91, 209);
+    font-weight: bold;
+}
+.login-page  .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-top: 20px;
+    text-align:center;
+
+}
+.login-page  .link a{
+    text-decoration: none;
+    color:rgb(226, 161, 76) ;
+  
+}
+.login-page  .link a span{
+  color: white;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color:white;
+}
+.icon {
+  text-decoration: none ;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+ 
+}
+.icon i{
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+    padding: top 5px; 
+}
+
+.last{
+margin-top: 540px;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+margin-left: -340px;
+ 
+}
+ .last .heading{
+  font-size: 16px;
+    color: chocolate;
+}
+ .last button{
+   
+    width: 100px;
+   padding: 6px;
+   color: white;
+   border: none;
+   background-color:rgb(195, 47, 76);
+   margin-left: 20px;
+   font-size: 13px;
+}
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="Background-image" id="background-image">
+       
+       
+        <div class="content" id="information">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolores minima doloremque cumque voluptatem corrupti similique eligendi quod! Quod sapiente debitis libero eaque numquam aliquid nemo incidunt. Deleniti repellat consequuntur quam voluptas ratione reiciendis sapiente ad. Ea, soluta tempora earum itaque quasi quaerat culpa debitis voluptatum quis quos optio velit. Est corrupti quibusdam quam quae error.</p>
+
+         </div>
+
+           <!-- Sign in page -->
+           <form method = "POST" class = "contact-form">
+          <div class="form" id="fo-close">
+         
+            <button class="close"><a href="#" id="form-close" onclick="closeHandler()">close</a></button>
+            <h2>Sign up</h2>
+            <input type="email" class="email" name="email" placeholder="Enter email Here" required>
+            <input type="password" name="password" placeholder="Enter password Here" required>
+            <input type="tel" class="phonenumber" name="phonenumber" placeholder="Enter Phone Number Here" required>
+          
+            <button type="submit" value="submit" class="btnn" onclick="onSubmitHandler()"><a href="#">Sign up</a> </button>
+
+            <p class="link">Already have an account<br>
+            <a href="#">Login here</a><span> Here</a></span>
+            <p class="liw">Log in with</p>
+
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+        </form>
+
+
+        <!--  log in page -->
+        <form method = "POST" class = "contact-form-login">
+        <div class="login-page" id="log-close" >
+         
+            <button class="close"><a href="#" id="form-close" onclick="closelogHandler()">close</a></button>
+            <h2>Login page</h2>
+            <input type="email" class="email" name="email" placeholder="Enter email Here" required>
+            <input type="password" class="password" name="password" placeholder="Enter password Here" required>
+           
+          
+            <button class="btnn"><a href="#">Log in</a> </button>
+
+            <p class="link">Don't have an account<br>
+            <a href="#">Sign-up here</a>
+            <p class="liw">Sign up with</p>
+
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+     </form>
+
+        <div class="last">
+            <h1 class="heading"> Way to the Main page</h1>
+            <button onclick="window.location.href='E-commerceSite.html'"> Main page</button>
+        </div>
+    
+</div>
+
+
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+    ////////////////////////////////////////////////////
+      // For sign up Form
+
+  document.getElementById("fo-close").style="" ;
+
+  function closeHandler(){
+  
+      document.getElementById("fo-close").style="display:none";
+    
+  }
+
+  //////////////////////////////////////////////////////////
+    //   // For log in Form
+
+    document.getElementById("log-close").style="" ;
+
+function closelogHandler(){
+
+    document.getElementById("log-close").style="display:none";
+  
+}
+
+////////////////////////////////////////////////////////////
+// Signup Gmail form
+
+
+const form = document.querySelector(".contact-form");
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    
+    let email = document.querySelector(".email").value;
+    let phonenumber = document.querySelector(".phonenumber").value;
+  
+
+    document.querySelector(".contact-form").reset();
+
+    sendEmail(email,phonenumber);
+  })
+  function sendEmail(email,phonenumber){
+    Email.send({
+        
+      Host: "smtp.elasticemail.com", 
+      Username: "atulsomkuwar2@gmail.com",
+      Password: "88C118862CECA6C732C323CB7B0D678D66D9",
+      To: "atulsomkuwar2@gmail.com",
+      From: "atulsomkuwar2@gmail.com",
+      Subject: `${email} Just messaged you from the website form thank you for visiting our site thank you hava successfully signed-in`,
+      Body: `Name: ${name} <br> Email: ${email} <br> Phonenumber:${phonenumber} <br> `,
+    }).then((success) => {
+     
+    //   alert("message sent successfully. Please check the spam folder in your mail.");
+    alert("Thank you for signing up in our Website");
+    }).catch((error) => {
+        
+      alert("error sending message");
+    })
+  }
+//   setTimeout(sendEmail,5000);
+///////////////////////////////////////////////////////
+ ///// Login Gmail form
+const form2 = document.querySelector(".contact-form-login");
+  form2.addEventListener("submit", e => {
+    e.preventDefault();
+    
+    let password = document.querySelector(".password").value;
+    let email = document.querySelector(".email").value;
+  
+
+    document.querySelector(".contact-form-login").reset();
+
+    sendEmail(password,email);
+  })
+  function sendEmail(password,email){
+    Email.send({
+        
+      Host: "smtp.elasticemail.com", 
+      Username: "atulsomkuwar2@gmail.com",
+      Password: "88C118862CECA6C732C323CB7B0D678D66D9",
+      To: "atulsomkuwar2@gmail.com",
+      From: "atulsomkuwar2@gmail.com",
+      Subject: `${email} Just messaged you from the website form thank you for visiting our site`,
+      Body: `password: ${password} <br> Email: ${email} <br>`,
+    }).then((success) => {
+     
+    //   alert("message sent successfully. Please check the spam folder in your mail.");
+    alert("You have successfully logged in");
+    }).catch((error) => {
+        
+      alert("error sending message");
+    })
+  }
+
+
+/////////////////////////////////////////////////////
+         //   this gives suggetion after the textbox to correct it 
+         //  Mobile Validation
+
+            function onSubmitHandler(){
+                let input = document.querySelector(".phonenumber").value;
+                
+                let pattern = /^(([+][9][1])|0)?[0-9]{1,10}$/;
+                let result = pattern.test(input);
+                if(!result){
+                    // document.querySelector("#result").innerHTML = "The values match found";
+                    // document.querySelector("#error").innerHTML = "";
+                    alert("You have a mail for signing up for visiting our website");
+                }
+                else{
+                     alert("The value Match is not found please add +91 or 0 after the number");
+                }
+            }      
+ /////////////////////////////////////////////////////////////// 
+        // Email Validation
+
+    function onSubmitHandler(){
+        let input = document.querySelector(".email").value;
+        
+        // akash343@newtonschool.com
+        let pattern = /^[a-zA-Z0-9]{4,40}@gmail\.(com)$/;
+        let result = pattern.test(input);
+        if(!result){
+            // document.querySelector("#result").innerHTML = "The values match found";
+            // document.querySelector("#error").innerHTML = "";
+        }
+        else{
+           alert("please enter the valid email Address");
+        }
+    }
+
+
+ ///////////////////////////////////////////////////////////////
+</script>
+
+
+</html>
