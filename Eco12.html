@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco12</title>
+    <link rel="stylesheet" href="Ecommerce.css">
+    <script src="https://kit.fontawesome.com/aaaede2f8f.js" crossorigin="anonymous"></script>
+    <style>
+        @media(max-width:300px){
+            #prodetails{
+                width:100%;
+            }
+
+        }
+        @media(max-width:1000px){
+         #prodetails{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+         }
+         #prodetails .single-pro-image{
+             width: 40%;
+            margin-left: 50px;
+         }
+         #prodetails .single-pro-details{
+            width: 100%;
+            padding-top: 30px;
+         } 
+         #prodetails .single-pro-details h4{
+        padding: 10px 0 10px 0;
+        font-size: 26px;
+       color: orange;
+       display: flex;
+       flex-direction: row;
+       text-align: center;
+            align-items: center;
+            justify-content: center;
+       
+     }
+     #prodetails .single-pro-details h4 p{
+     color: #a9ca3d;
+       font-size: 26px;
+       margin-right: 5px;
+    
+
+     }
+     #prodetails .single-pro-details h4 s{
+         font-size: 15px;
+         color: orange;
+         margin-top: 10px;
+
+         
+     }
+     #prodetails .single-pro-details h3{
+       font-size: 16px;
+      color: #265084;
+       padding: 10px 0 10px 0;
+     }
+     #prodetails button{
+      background:rgb(110 158 247) ;
+      color: white;
+      font-family: 'Arial Narrow Bold', sans-serif;
+      border:2px solid #008060;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+    
+     }
+     #prodetails #servicePerc{
+       
+       color: white;
+       font-style: italic;
+       font-weight: bold;
+       padding: 10px;
+       font-size: 15px;
+      background:orange;
+       display: flex;
+       color: white;
+      border: none;
+      padding:10px 30px;
+       border-radius: 4px;
+       transition: max-height 0.5s;
+       text-align: center;
+            align-items: center;
+            justify-content: center;
+        margin-left: 390px;
+    }
+}
+    @media(max-width:710px){
+        #prodetails #servicePerc{
+       
+     
+       text-align: center;
+            align-items: center;
+            justify-content: center;
+        margin-left: 250px;
+    }
+}
+    @media(max-width:470px){
+        #prodetails #servicePerc{
+       
+     
+       text-align: center;
+            align-items: center;
+            justify-content: center;
+        margin-left: 80px;
+    }
+    #newsteller .newstext{
+            
+            position: relative;
+            margin-top: 65px;
+            
+        }
+}
+    </style>
+</head>
+<body>
+   
+   
+
+     <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="Tshirt4.jpg" alt="" width="100%" id="MainImg">
+        </div>
+
+        <div class="single-pro-details">
+            <h2>Van Huesen Athleisure Mens Regular Slim polo</h2>
+            <h4></h4>
+            <div class="star-pro-details">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+                <h4>Price: <p id="price12">949 </p>Rs<s>1199</s></h4>
+
+            <h3>Inclusive of all taxes</h3>
+            <!-- <ul>
+                <li>Care Instructions: Machine Wash</li>
+                <li>Fit Type :Slim Fit</li>
+                <li>Sleeve Type:Sleeve;Collar Style ;Spread Collar;Color name:Dusty Blue</li>
+            </ul> -->
+            <button onclick="window.location.href='cart-save.html'">Add To Cart</button>
+
+            <h3>Preferrebale Amount of Products According to Customer</h3>
+
+            <select id="servicePerc" required>
+                <option value="0"
+                            disabled
+                             selected>
+                             Customers choice</option>
+              
+                <option>899 to 949</option>
+                <option>775 to 899</option>
+                <option>725 to 775</option>
+                <option>675 to 725</option>
+                <option>625 to 675</option>
+                <option>575 to 625</option>
+                <option>525 to 575</option>
+                <option>470 to 525</option>
+                                     
+                </options>
+            </select>
+
+            <div class="Notify">
+                <label for="Get Notify">Get Notify On your Device</label><br>
+                <label for="Get Notify">Whats app ScreenShot</label>
+                <input type="checkbox" id="checkbox" value="Whats app" required>
+                <label for="Get Notify">text Box</label>
+                <input type="checkbox" id="checkbox" value="text Box" required>
+                <label for="Get Notify">Notification on Gmail</label>
+                <input type="checkbox" id="checkbox" value="Notification on Gmail" required>
+            </div>
+
+             <h3>Size:</h3>
+             <select id="Size" required>
+                <option value="0"
+                            disabled
+                             selected>
+                            Select</option> 
+                <option>S</option>
+                <option>M</option> 
+                <option>L</option> 
+                <option>XL</option> 
+               
+                                         
+                </options>
+            </select>
+
+           
+            <div id="Pro-info">
+           <div class="Product-details">
+            <h2>Product Details</h2>
+           </div class="info-product">
+            <p>Name :Van Huesen Athleisure Mens Regular Slim polo<br>
+
+                color Name: Silver <br>
+
+                Fabric : Soft and smooth  Breathable 100% Cotton<br>
+
+                Sleeve Length : Half Sleeves<br>
+                
+                Pattern : Solid<br>
+                
+                Net Quantity (N) : 1<br>
+                
+                Sizes : 
+                 S, M, L, XL<br>
+                
+                Country of Origin : India
+
+               Closure type:Button:Collar Style
+
+               Suitable for,Sports type: Walking
+               
+              
+            </p>
+            
+        </div>
+    </div>
+     </section>
+
+
+    <section id="newsteller" class="section-p1" class="section-m1">
+        <div class="newstext">
+        <h1>Sign-in For Newstellers</h1>
+        <p>Get Email or notification on Your Choiced Products</p>
+        </div>
+
+        <div class="sign-up">
+            <input type="text" placeholder="Your email address" required>
+            <!-- <input type="password" placeholder="Enter your password" required > -->
+            <!-- <button>Sign-in</button> -->
+            <a href='#'><input type="Submit" class="btn5" value="Sign-up"></a>
+            <!-- <a href='#'><input type="Submit" class="btn6" value="Reset"></a> -->
+        </div>
+
+    </section>
+
+   <footer class="section-p1">
+        <div class="col-1">
+            <h4>Contact with us</h4>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+
+            <div class="follow"  class="section-p1">
+                <h4>Follow us </h4>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-2">
+            <h4>About</h4>
+            <p>About us</p>
+            <p>Delivery Information</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+    
+        </div>
+
+        <div class="col-3">
+            <h4>My Account</h4>
+            <p>Sign-in</p>
+            <p>View Cort</p>
+            <p>My WishList</p>
+            <p>Help</p>
+    
+        </div>
+
+   </footer>
+   <script src= "Gmail.js"></script>
+
+</body>
+</html>
