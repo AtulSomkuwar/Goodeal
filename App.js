@@ -1,15 +1,4 @@
 
-//  const Forall = document.getElementByClassName("for-all");
-//  const ServicePerc = document.getElementById("servicePerc");
-
-//  function mainFunction(){
-//  if(Forall === ServicePerc){
-   
-//  }
-// }
-
-
-
   ////////////////////////////////////////////////////////
 
     // document.getElementById("sign-in").addEventListener("click",function(){
@@ -37,21 +26,6 @@
         })
       }
   
-///////////////////////////////////////////
-  // For log in Form
- 
-  // document.getElementById("fo-close").style="" ;
-
-  // function closeHandler(){
-  //     document.getElementById("fo-close").style="display:none";   
-  // }
-
-///////////////////////////////////////////
-
-////////////////////////////////////////////
-
-
-
 //////////////////////////////////////////////
 
 //Moving banners
@@ -83,55 +57,7 @@ else{
 }
 } 
 
-//////////////////////////////////////////////
 
-/// Add to cart
-
-
-// const addBtnElement=document.getElementById("s1");
-// const removeBtnElement=document.getElementById("remove");
-// // const displayBtnElement=document.getElementById("display");
-// const mainElement=document.getElementById("1st");
-
-// addBtnElement.addEventListener("click",addFunc)
-// removeBtnElement.addEventListener("click",removeFunc);
-// // displayBtnElement.addEventListener("click",displayFunc);
-
-
-// function addFunc()
-// {
-//     const listElement=document.createElement("option");
-//     let addInput=prompt("Enter what to add");
-
-//     listElement.value=addInput;
-//     listElement.id=addInput;
-//     listElement.innerText=addInput;
-
-//     mainElement.appendChild(listElement);
-// }
-
-// function removeFunc()
-// {
-//     let removeInput=prompt("enter what you need to delete");
-
-//     document.getElementById(removeInput).remove();
- 
-// }
-
-// function displayFunc()
-// {
-//     let arr=[];
-    
-//     for(let i=0;i<mainElement.length;i++)
-//     {
-//         arr[i]=document.getElementsByTagName("option")[i].value;
-//     }
-//     let count=0;
-//         count=mainElement.length;
-//     alert("List as follow:"+arr+"     "+"Count:"+count);
-// }
-
-////////////////////////////////////////////////
 
 
 
