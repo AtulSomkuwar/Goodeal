@@ -219,7 +219,7 @@ background: #afb0b2;
 }
 #navbar li a:hover,
 #navbar li a.active{
-    background-color:#ee6829;
+/*     background-color:; */
 }
 .logo{
     font-size: 70px;
